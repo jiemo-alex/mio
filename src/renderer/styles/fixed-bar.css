@@ -1,0 +1,68 @@
+.fixed-bar {
+    flex: none;
+    height: 100%;
+    width: auto;
+}
+
+.navbar {
+    float: left;
+    height: 100%;
+    width: 53px;
+    background-color: #1a1a1a;
+    border-top: 1px solid #1a1a1a;
+}
+
+.navbar a {
+    display: block;
+    width: 53px;
+    height: 53px;
+    border: 0;
+    color: #CCC;
+    line-height: 53px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.navbar a:hover {
+    color: #fff;
+}
+.navbar a.active {
+    color: #fff;
+    border-left: 2px solid #fff;
+}
+
+.folder {
+    display: flex;
+    background-color: #3a3a3a;
+    min-width: 150px;
+    height: 100%;
+}
+.folder .hold-bar {
+    flex: none;
+    height: 100%;
+    width: 2px;
+}
+
+.folder .list {
+    flex: auto;
+    width: 100%;
+    overflow: none;
+}
+.folder .list:hover {
+    overflow-y: auto;
+}
+
+.folder .list .title {
+    padding: .6rem 1rem;
+    user-select: none;
+    font-size: .7rem;
+    color: #EEE;
+    font-weight: normal;
+}
+
+.folder .list .tree li {
+    list-style: none;
+    cursor: pointer;
+    font-size: .8rem;
+    padding: 1px 1rem;
+    color: white;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "mio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main/index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "directory-tree": "^2.2.4",
+    "monaco-editor": "^0.20.0",
+    "requirejs": "^2.3.6"
+  },
+  "devDependencies": {
+    "electron": "^8.2.5",
+    "electron-builder": "^22.6.0"
+  },
+  "build": {
+    "appId": "com.example.app",
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": false
+    }
+  }
+}

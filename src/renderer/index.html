@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous"> -->
+
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/fixed-bar.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/fontawesome-free-5.13.0-web/css/all.min.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js" integrity="sha256-0SGl1PJNDyJwcV5T+weg2zpEMrh7xvlwO4oXgvZCeZk=" crossorigin="anonymous"></script>
+  <title>Mio</title>
+</head>
+<body class="bg-pop">
+  <div class="container">
+    <div id="content" class="content">
+      <div class="fixed-bar">
+        <nav class="navbar">
+          <a href="#" id="nav-btn-files" class="active"><i class="far fa-copy"></i></a>
+          <a href="#"><i class="fas fa-search"></i></a>
+        </nav>
+
+        <div id="folder" class="folder">
+          <div class="list">
+            <h4 id="title" class="title">资源管理器</h4>
+            <ul class="tree" id="tree">
+              <li><i class="fas fa-folder" style="color: cadetblue;"></i> renderer</li>
+              <li><i class="fas fa-copy" style="color: rgb(212, 212, 212);"></i> editor.js</li>
+            </ul>
+          </div>
+          <div id="hold-bar" class="hold-bar"></div>
+        </div>
+      </div>
+
+      <div class="frame">
+        <ul id="tabs" class="tabs">
+          <li class="active"><p>欢迎使用</p><a href="#">&times;</a></li>
+        </ul>
+        <div id="editor" class="editor"></div>
+        <div id="welcome" class="editor welcome">
+          <h3>启动</h3>
+          <div>
+            <a href="#" id="open-file">打开文件</a><br />
+            <a href="#" id="open-dir">打开文件夹</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+
+    </footer>
+  </div>
+
+  <script src="./styles/fixed-bar.js"></script>
+  <script src="./com/editor.js"></script>
+  <script src="./com/actions.js"></script>
+</body>
+</html>
