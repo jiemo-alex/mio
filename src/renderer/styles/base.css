@@ -74,6 +74,7 @@ footer {
 }
 .content .frame .tabs li.active {
     background-color: #202020;
+    border-bottom: 1px solid rgb(145, 238, 255);
 }
 .content .frame .tabs li p, .content .frame .tabs li a {
     display: block;
